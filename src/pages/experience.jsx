@@ -6,11 +6,10 @@ const Experience = () => {
                     <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
                     <img className="rounded-t-lg" src="https://mdbootstrap.com/img/new/standard/nature/182.jpg" alt=""/>
                     </a>
-                    <div className="p-6">
+                    <div className="p-6 h-48">
                     <h5 className="text-gray-900 text-xl font-medium mb-2">AFRIHUB IMT</h5>
                     <p className="text-gray-700 text-base mb-4">
-                        Some quick example text to build on the card title and make up the bulk of the card's
-                        content.
+                        During my stay at Afrihub IMT i worked as an intern and also an associate tutor filling in for my superiors that were at some point absent for some reason. 
                     </p>
                     </div>
                 </div>
@@ -20,11 +19,10 @@ const Experience = () => {
                     <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
                     <img className="rounded-t-lg" src="https://mdbootstrap.com/img/new/standard/nature/182.jpg" alt=""/>
                     </a>
-                    <div className="p-6">
+                    <div className="p-6 h-48">
                     <h5 className="text-gray-900 text-xl font-medium mb-2">LOUDIT</h5>
                     <p className="text-gray-700 text-base mb-4">
-                        Some quick example text to build on the card title and make up the bulk of the card's
-                        content.
+                        I worked as the frontend engineer developing the clientside of their E-commerce site and also assisting the CTO in charge.
                     </p>
                     </div>
                 </div>
