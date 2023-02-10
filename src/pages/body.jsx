@@ -1,6 +1,7 @@
 import Hero from "./hero";
 import Experience from "./experience";
 import Project from "./project";
+import Skills from "./skills";
 
 
 const Body = () => {
@@ -9,6 +10,7 @@ const Body = () => {
             <Hero/>
             <Experience/>
             <Project/>
+            <Skills/>
         </div>
      );
 }

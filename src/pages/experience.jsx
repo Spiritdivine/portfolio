@@ -1,6 +1,6 @@
 const Experience = () => {
     return ( 
-        <div className="h-screen pt-6 flex justify-center items-center">
+        <div className="h-screen pt-6 flex justify-center items-center bg-slate-300">
             <div className="flex">
                 <div className="rounded-lg shadow-lg bg-white max-w-sm">
                     <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
