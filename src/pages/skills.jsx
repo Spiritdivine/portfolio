@@ -9,34 +9,34 @@ import php from "./photos/Skills/php.svg";
 
 const Skills = () => {
     return ( 
-        <div className=" px-6 py-14 h-screen bg-sky-500">
+        <div className=" px-6 py-14 h-screen bg-slate-200">
             <div className="w-84 mb-10"><h2 className="text-6xl font-mono">Technologies</h2></div>
             <div className=" flex justify-between mb-14">
                 <div>
-                    <div className="w-48 "><img src={html} alt="HTML"/></div>
+                    <div className="w-36 "><img className="w-full" src={html} alt="HTML"/></div>
                 </div>
                 <div>
-                    <div className="w-48 "><img src={css} alt="CSS"/></div>
+                    <div className="w-36 "><img className="w-full" src={css} alt="CSS"/></div>
                 </div>
                 <div>
-                    <div className="w-48 "><img src={js} alt="Javascript"/></div>
+                    <div className="w-36 "><img className="w-full" src={js} alt="Javascript"/></div>
                 </div>
                 <div>
-                    <div className="w-48 "><img src={react} alt="React js"/></div>
+                    <div className="w-36 "><img className="w-full" src={react} alt="React js"/></div>
                 </div>
             </div>
             <div className=" flex justify-between ">
                 <div>
-                    <div className="w-48 "><img src={node} alt="Node js"/></div>
+                    <div className="w-36 "><img className="w-full" src={node} alt="Node js"/></div>
                 </div>
                 <div>
-                    <div className="w-48 "><img src={bootstrap} alt="Express js"/></div>
+                    <div className="w-36 "><img className="w-full" src={bootstrap} alt="Express js"/></div>
                 </div>
                 <div>
-                    <div className="w-48 "><img src={mongo} alt="Mongo db"/></div>
+                    <div className="w-36 "><img className="w-full" src={mongo} alt="Mongo db"/></div>
                 </div>
                 <div>
-                    <div className="w-48 "><img src={php} alt="php"/></div>
+                    <div className="w-36 "><img className="w-full" src={php} alt="php"/></div>
                 </div>
             </div>
         </div>
