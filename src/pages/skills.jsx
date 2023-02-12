@@ -9,7 +9,7 @@ import php from "./photos/Skills/php.svg";
 
 const Skills = () => {
     return ( 
-        <div className=" px-6 py-14 h-screen bg-slate-200">
+        <div id="skills"  className=" px-6 py-14 h-screen bg-slate-200">
             <div className="w-84 mb-10"><h2 className="text-6xl font-mono">Technologies</h2></div>
             <div className=" flex justify-between mb-14">
                 <div>

@@ -5,19 +5,56 @@ import landpage from "./photos/landpage.png";
 import portfolio from "./photos/portfolio.png";
 import restaurant from "./photos/restaurant.png";
 
-const boxVariant = {
-    visible: { opacity: 1, scale: 1 },
-    hidden: { opacity: 0, scale: 0 },
+const tleftVariant = {
+    visible: { opacity: 1, scale: 1, x: 0, y: 0 },
+    hidden: { opacity: 0, scale: 0, x: -150, y: -150 },
+  }
+const trightVariant = {
+    visible: { opacity: 1, scale: 1, x: 0, y: 0 },
+    hidden: { opacity: 0, scale: 0, x: 150, y: -150 },
+  }
+const bleftVariant = {
+    visible: { opacity: 1, scale: 1, x: 0, y: 0 },
+    hidden: { opacity: 0, scale: 0, x: -150, y: 150 },
+  }
+const brightVariant = {
+    visible: { opacity: 1, scale: 1, x: 0, y: 0 },
+    hidden: { opacity: 0, scale: 0, x: 150, y: 150 },
   }
 
 const Project = () => {
+
+    const control = useAnimation()
+    const [ref, inView] = useInView()
+
+    useEffect(() => {
+        if (inView) {
+          control.start("visible");
+        } else {
+            control.start("hidden");
+        }
+    }, [control, inView]);
+
+    const charge = useAnimation()
+    const [def, inPlace] = useInView()
+
+    useEffect(() => {
+        if (inPlace) {
+          charge.start("visible");
+        } else {
+            charge.start("hidden");
+        }
+    }, [charge, inPlace]);
+
     return ( 
-        <div className="bg-slate-300 h-[180vh] py-[3rem]">
+        <div id="projects" className="bg-slate-300 h-[180vh] py-[3rem]">
             <h1 className="text-6xl font-bold leading-none mb-[4rem]">Projects</h1>
             <div className=" flex justify-center items-center mb-[4rem]">
                 <motion.div 
-                animate={{ x: 0, y: 0 }} 
-                initial={{x: -150, y: -150}}
+                ref={ref}
+                variants={tleftVariant}
+                animate={control}
+                initial="hidden"
                 transition={{
                     x: { duration: 0.5 },
                     default: { ease: "linear" }
@@ -54,8 +91,10 @@ const Project = () => {
                     </div>
                 </motion.div>
                 <motion.div
-                animate={{ x: 0, y: 0 }} 
-                initial={{x: 150, y: -150}}
+                ref={ref}
+                variants={trightVariant}
+                animate={control}
+                initial="hidden"
                 transition={{
                     x: { duration: 0.5 },
                     default: { ease: "linear" }
@@ -95,8 +134,10 @@ const Project = () => {
             </div>
             <div className=" flex justify-center items-center">
                 <motion.div 
-                animate={{ x: 0, y: 0 }} 
-                initial={{x: -150, y: 150}}
+                ref={def}
+                variants={bleftVariant}
+                animate={charge}
+                initial="hidden"
                 transition={{
                     x: { duration: 0.5 },
                     default: { ease: "linear" }
@@ -121,7 +162,7 @@ const Project = () => {
                                 This here is a personal portfolio site i built using few technologies namely react, material UI, tailwind, html, css and javascript.
                             </p>
                             <div className="flex justify-evenly items-center ">
-                                <a href="https://portfolio-chi-woad-15.vercel.app/" data-mdb-ripple="true" data-mdb-ripple-color="light">
+                                <a href="https://github.com/Spiritdivine/portfolio" data-mdb-ripple="true" data-mdb-ripple-color="light">
                                     <button type="button" className="w-[7rem] inline-block px-4 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">source code</button>
                                 </a>
                                 <a href="https://portfolio-chi-woad-15.vercel.app/" data-mdb-ripple="true" data-mdb-ripple-color="light">
@@ -135,8 +176,10 @@ const Project = () => {
                     </div>
                 </motion.div>
                 <motion.div 
-                animate={{ x: 0, y: 0 }} 
-                initial={{x: 150, y: 150}}
+                ref={def}
+                variants={brightVariant}
+                animate={charge}
+                initial="hidden"
                 transition={{
                     x: { duration: 0.5 },
                     default: { ease: "linear" }

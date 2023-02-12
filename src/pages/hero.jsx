@@ -43,30 +43,58 @@ const Hero = () => {
                     KELECHI
                 </motion.h2>
                 <motion.p
-                animate={{ y: 0 }} 
-                initial={{y: 500}}
+                animate={{ x: 0 }} 
+                initial={{x: 500}}
                 transition={{
                     delay: 0.8,
-                    x: { duration: 0.8 },
+                    x: { duration: 0.5 },
                     default: { ease: "linear" }
                   }}
                 >
                     I am a passionate developer
                 </motion.p>
-                <div>
+                <motion.div
+                animate={{ x: 0 }} 
+                initial={{x: -500}}
+                transition={{
+                    delay: 1,
+                    x: { duration: 0.5 },
+                    default: { ease: "linear" }
+                  }}
+                >
                     <p className='text-white text-2xl'>
                         I design and develop services for customers of all sizes,
                         specializing in creating stylish, modern websites, web services and online stores
                     </p>
-                </div>
+                </motion.div>
                 <div>
                     <div></div>
                     <div></div>
                 </div>
             </div>
             <div className='flex items-center w-1/2 relative'>
-                <div className='w-72 h-84 bg-blue-700 rounded-lg relative z-10'><img src={blue} alt='pic'/></div>                
-                <div className='rounded-lg absolute left-32'><img src={pink} alt='pic' className='w-84 h-42'/></div>                
+                <motion.div 
+                animate={{ y: 0 }} 
+                initial={{y: -1000}}
+                transition={{
+                    delay: 1,
+                    x: { duration: 0.5 },
+                    default: { ease: "linear" }
+                }}
+                className='w-72 h-84 bg-blue-700 rounded-lg relative z-10 '>
+                    <img src={blue} alt='pic'/>
+                </motion.div>                
+                <motion.div 
+                animate={{ x: 0 }} 
+                initial={{x: 500}}
+                transition={{
+                    delay: 1,
+                    x: { duration: 0.5 },
+                    default: { ease: "linear" }
+                }}
+                className='rounded-lg absolute left-32'>
+                    <img src={pink} alt='pic' className='w-84 h-42'/>
+                </motion.div>                
             </div>
         </div>
      );
