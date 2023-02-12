@@ -1,10 +1,47 @@
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 import loudit from "./photos/loudit.jpg";
 import afrihub from "./photos/Afrihub.jpg";
 
+const leftVariant = {
+    visible: { opacity: 1, scale: 1, x: 0 },
+    hidden: { opacity: 0, scale: 0, x: 500 },
+}
+
+const rightVariant = {
+    visible: { opacity: 1, scale: 1, x: 0 },
+    hidden: { opacity: 0, scale: 0, x: -500 },
+}
+
+
+
 const Experience = () => {
+
+    const control = useAnimation()
+    const [ref, inView] = useInView()
+
+    useEffect(() => {
+        if (inView) {
+          control.start("visible");
+        } else {
+            control.start("hidden");
+        }
+    }, [control, inView]);
+
     return ( 
-        <div className="h-screen pt-6 flex justify-center items-center bg-slate-400">
-            <div className="flex h-96">
+        <div id="experience" className="h-screen pt-6 flex justify-center items-center bg-slate-400">
+            <motion.div 
+            ref={ref}
+            variants={leftVariant}
+            initial="hidden"
+            animate={control}
+            transition={{
+                delay: 0.2,
+                x: { duration: 0.5 },
+                default: { ease: "linear" }
+              }}
+            className="flex h-96 hover:shadow-2xl">
                 <div className="rounded-lg shadow-lg bg-white max-w-sm">
                     
                     <div className="w-96 h-48">
@@ -18,8 +55,18 @@ const Experience = () => {
                     </p>
                     </div>
                 </div>
-            </div>
-            <div className="flex ml-8 h-96">
+            </motion.div>
+            <motion.div 
+            ref={ref}
+            variants={rightVariant}
+            initial="hidden"
+            animate={control}
+            transition={{
+                delay: 0.2,
+                x: { duration: 0.5 },
+                default: { ease: "linear" }
+              }}
+            className="flex ml-8 h-96 hover:shadow-2xl">
                 <div className="rounded-lg shadow-lg bg-white max-w-sm">
                     <div className="w-96 h-48">
                         <img className="rounded-t-lg object-cover w-full h-full" src={loudit} alt=""/>
@@ -31,7 +78,7 @@ const Experience = () => {
                     </p>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
      );
 }
