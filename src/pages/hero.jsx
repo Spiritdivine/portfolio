@@ -7,7 +7,7 @@ import pink from './photos/pink.png';
 
 const Hero = () => {
     return ( 
-        <div className='flex space-x-32 justify-center items-center px-10  h-screen bg-slate-800'>
+        <div className='flex space-x-32 justify-center items-center px-10  h-screen bg-slate-800 hero'>
             <div className='w-1/2'>
                 <motion.p 
                 animate={{ x: 0 }} 
@@ -16,7 +16,7 @@ const Hero = () => {
                     delay: 0.2,
                     x: { duration: 0.5 },
                     default: { ease: "linear" }
-                  }}
+                }}
                 className='font-sans hover:font-serif text-4xl font-bold leading-relaxed text-blue-700'>
                     Hello, i am
                 </motion.p>
@@ -27,7 +27,7 @@ const Hero = () => {
                     delay: 0.4,
                     x: { duration: 0.5 },
                     default: { ease: "linear" }
-                  }}
+                }}
                 className='text-8xl font-bold leading-none'>
                     MADU
                 </motion.h2>
@@ -38,7 +38,7 @@ const Hero = () => {
                     delay: 0.6,
                     x: { duration: 0.5 },
                     default: { ease: "linear" }
-                  }}
+                }}
                 className='text-8xl font-bold leading-none'>
                     KELECHI
                 </motion.h2>
@@ -53,26 +53,12 @@ const Hero = () => {
                 >
                     I am a passionate developer
                 </motion.p>
-                <motion.div
-                animate={{ x: 0 }} 
-                initial={{x: -500}}
-                transition={{
-                    delay: 1,
-                    x: { duration: 0.5 },
-                    default: { ease: "linear" }
-                  }}
-                >
-                    <p className='text-white text-2xl'>
-                        I design and develop services for customers of all sizes,
-                        specializing in creating stylish, modern websites, web services and online stores
-                    </p>
-                </motion.div>
                 <div>
                     <div></div>
                     <div></div>
                 </div>
             </div>
-            <div className='flex items-center w-1/2 relative'>
+            <div className='flex items-center w-1/2 relative design'>
                 <motion.div 
                 animate={{ y: 0 }} 
                 initial={{y: -1000}}

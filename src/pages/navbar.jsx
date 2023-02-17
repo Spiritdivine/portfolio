@@ -11,7 +11,7 @@ import me from "./photos/me.jpg";
 
 const Navbar = () => {
     return ( 
-        <nav className="w-1/5  h-full fixed z-10 shadow-md bg-blue-400 pt-4">
+        <nav className="w-[20%]  h-full fixed z-10 shadow-md bg-blue-400 pt-4 navbar">
               <div className="pt-4 pb-2 px-2">
                     <a href="#!">
                     <div className="flex items-center">
@@ -30,7 +30,7 @@ const Navbar = () => {
                     <a href="#experience"><li className="relative pt-8... cursor-pointer flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" ><FiTrendingUp/>Experience</li></a>
                     <a href="#projects"><li className="relative pt-8... cursor-pointer flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" ><MdLibraryBooks/>projects</li></a>
                     <a href="#skills"><li className="relative pt-8... cursor-pointer flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" ><RiBarChartBoxFill/>Skills</li></a>
-                    <li className="relative pt-8... cursor-pointer flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" ><FaGraduationCap/>Education</li>
+                    <a href="#education"><li className="relative pt-8... cursor-pointer flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" ><FaGraduationCap/>Education</li></a>
                     <li className="relative pt-8... cursor-pointer flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" ><MdEmail/>Contact</li>
                     <li className="relative pt-8... cursor-pointer flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" ><MdOutlineFolderOpen/>Resume</li>
                 </ul>
