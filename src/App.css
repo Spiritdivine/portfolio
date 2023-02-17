@@ -9,3 +9,64 @@
 *{
   scroll-behavior: smooth;
 }
+
+#experience .places{
+  width: 24rem;
+}
+
+@media screen and (max-width:600px) {
+  .navbar{
+    display: none;
+  }
+
+  .body{
+    width: 100% !important;
+  }
+
+  .hero p{
+    font-size: 1.5rem;
+  }
+
+  .hero h2{
+    font-size: 4rem;
+  }
+  
+  .design{
+    display: none !important;
+  }
+
+  #experience{
+    display: flex;
+    padding: 3rem 4rem;
+  }
+
+  #experience > :first-child{
+    margin-bottom: 3rem;
+  }
+
+  #experience .places{
+    display: block;
+    width: 12rem;
+    height: 20rem;
+  }
+
+  #experience .places .subplace1{
+    height: 30%;
+    width: 100%;
+  }
+
+  #experience .places .subplace2{
+    width: 100%;
+  }
+
+  #experience .places  .subplace2 p{
+    font-size: 12px;
+  }
+
+
+
+  #experience div p{
+    font-size: small;
+    font-weight: 400;
+  }
+}
