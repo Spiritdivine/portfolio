@@ -24,49 +24,68 @@
   }
 
   .hero p{
-    font-size: 1.5rem;
+    font-size: 0.9rem;
   }
 
   .hero h2{
-    font-size: 4rem;
+    font-size: 2rem;
+    color: aliceblue;
   }
   
   .design{
     display: none !important;
   }
 
-  #experience{
+  
+  #exp-div{
+    height: 120vh;
+    padding: 5px;
+  }
+
+  #exp-div > #exp-text{
+    font-size: 2em;
+    margin-bottom: 1.5em;
+  }
+
+  .experience{
+    display: block !important;
+    margin-bottom: 0;
+  }
+
+  .experience .places{
+    height: 8em;
+    width: 70vw !important;
     display: flex;
-    padding: 3rem 4rem;
+    margin-bottom: 2em;
+    border-radius: 5px;
   }
 
-  #experience > :first-child{
-    margin-bottom: 3rem;
+  .otherside{
+    display: flex;
+    flex-direction: row-reverse;
   }
 
-  #experience .places{
-    display: block;
-    width: 12rem;
-    height: 20rem;
+  .experience .places .subplace1{
+    width: 50% !important;
+    height: 100%;
   }
 
-  #experience .places .subplace1{
-    height: 30%;
-    width: 100%;
+  .experience .places .subplace2{
+    height: 100%;
+    width: 50%;
+    padding: 3px;
+
   }
 
-  #experience .places .subplace2{
-    width: 100%;
+  .experience .places .subplace2 p{
+    font-size: 0.6em;
+    line-height: normal;
   }
 
-  #experience .places  .subplace2 p{
-    font-size: 12px;
+  .experience .places .subplace2 h5{
+    font-size: 0.8em;
   }
 
-
-
-  #experience div p{
-    font-size: small;
-    font-weight: 400;
-  }
+  /*project section*/
+  
 }
