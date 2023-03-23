@@ -41,13 +41,13 @@ const Experience = () => {
     }, [charge, inPlace]);
 
     return ( 
-        <div className="h-[180vh] bg-slate-400 pt-10 flex items-center flex-col" id="exp-div">
+        <div className="h-[180vh] bg-slate-400 pt-10 flex items-center flex-col" id="experience">
 
 
             <h2 className="text-6xl font-bold leading-none mb-[4rem] " id="exp-text">Experience</h2>
 
 
-            <div id="experience" className=" flex justify-center items-center mb-10 experience">
+            <div className=" flex justify-center items-center mb-10 experience">
                 <motion.div 
                 ref={ref}
                 variants={leftVariant}

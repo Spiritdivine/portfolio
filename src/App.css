@@ -37,12 +37,12 @@
   }
 
   
-  #exp-div{
+  #experience{
     height: 120vh;
     padding: 5px;
   }
 
-  #exp-div > #exp-text{
+  #experience > #exp-text{
     font-size: 2em;
     margin-bottom: 1.5em;
   }
@@ -88,4 +88,13 @@
 
   /*project section*/
   
+}
+
+.university{
+  background: url("/src/pages/photos/bguni.jpg") center no-repeat;
+  background-size: cover;
+}
+.uni-sub{
+  position: relative;
+  top: 19rem;
 }
