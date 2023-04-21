@@ -1,11 +1,13 @@
 import './App.css';
+import Body from './pages/body';
+import Navbar from './pages/navbar';
 import Portfolio from './pages/portfolio';
-import Landpage from "./pages/project/landing"
 
 function App() {
   return (
     <div className="App">
-      <Portfolio/>
+      <Navbar/>
+      <Body/>
     </div>
   )
 }

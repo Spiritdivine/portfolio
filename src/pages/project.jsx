@@ -48,7 +48,7 @@ const Project = () => {
     }, [charge, inPlace]);
 
     return ( 
-        <div id="projects" className="bg-slate-300 h-[180vh] py-[3rem]">
+        <div id="projects" className=" h-[180vh] py-[3rem]">
 
             <h1 className="text-6xl font-bold leading-none mb-[4rem]">Projects</h1>
 

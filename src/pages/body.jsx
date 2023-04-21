@@ -3,17 +3,21 @@ import Experience from "./experience";
 import Project from "./project";
 import Skills from "./skills";
 import Education from "./education";
+import Contact from "./contact";
+import About from "./About";
 
 
 const Body = () => {
     return ( 
-        <div className="w-[80%] ml-auto body">
+        <main className="body" id="body">
             <Hero/>
+            <About/>
             <Experience/>
             <Project/>
             <Skills/>
             <Education/>
-        </div>
+            <Contact/>
+        </main>
      );
 }
  
