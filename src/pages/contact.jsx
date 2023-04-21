@@ -10,7 +10,7 @@ import RedditIcon from '@mui/icons-material/Reddit';
 
 const Contact = () => {
     return ( 
-        <div className="h-screen  bg-slate-100 pt-[2rem] px-[2rem]" id="contact">
+        <div className="h-screen pt-[2rem] px-[2rem]" id="contact">
             <div className="flex justify-center align-center ">
                 <h2 className="text-6xl font-bold leading-none mb-[2rem] " id="exp-text">CONTACT</h2>
             </div>
@@ -18,7 +18,7 @@ const Contact = () => {
                 <div className="w-[50%] h-[100%] ">
                     <img src={contact} alt="contact" />
                 </div>
-                <div className='w-[50%] h-[70vh] bg-slate-500 grid grid-cols-2 gap-2 py-[3rem] px-[2rem] justify-center align-center rounded-md'>
+                <div className='w-[50%] h-[70vh] grid grid-cols-2 gap-2 py-[3rem] px-[2rem] justify-center align-center rounded-md'>
                     <div className=" block justify-center align-center">
                         <div className="h-[7rem] w-[100%] flex justify-center align-center ">
                             <div className=" h-[6rem] w-[6rem] border-solid border-4 border-sky-500 rounded-full flex justify-center align-center">

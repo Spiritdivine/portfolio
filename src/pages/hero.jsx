@@ -3,21 +3,23 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import blue from './photos/blue.png';
 import pink from './photos/pink.png';
+import MyComponent from "../component/Typed";
 
 
 const Hero = () => {
+    
     return ( 
-        <div className='flex space-x-32 justify-center items-center px-10  h-screen bg-slate-800 hero'>
-            <div className='w-1/2'>
+        <div className='flex space-x-32 justify-start items-center px-2  h-screen  hero' id="hero">
+            <div className='w-1/2' id="hero-box1">
                 <motion.p 
                 animate={{ x: 0 }} 
                 initial={{x: -500}}
                 transition={{
                     delay: 0.2,
                     x: { duration: 0.5 },
-                    default: { ease: "linear" }
+                    default: { ease: "linear"}
                 }}
-                className='font-sans hover:font-serif text-4xl font-bold leading-relaxed text-blue-700'>
+                className='font-sans hover:font-serif text-3xl font-bold leading-relaxed text-blue-700'>
                     Hello, i am
                 </motion.p>
                 <motion.h2 
@@ -28,7 +30,7 @@ const Hero = () => {
                     x: { duration: 0.5 },
                     default: { ease: "linear" }
                 }}
-                className='text-8xl font-bold leading-none'>
+                className='text-6xl font-bold leading-none text-slate-800'>
                     MADU
                 </motion.h2>
                 <motion.h2 
@@ -39,7 +41,7 @@ const Hero = () => {
                     x: { duration: 0.5 },
                     default: { ease: "linear" }
                 }}
-                className='text-8xl font-bold leading-none'>
+                className='text-6xl font-bold leading-none text-slate-800'>
                     KELECHI
                 </motion.h2>
                 <motion.p
@@ -50,12 +52,12 @@ const Hero = () => {
                     x: { duration: 0.5 },
                     default: { ease: "linear" }
                   }}
-                >
-                    I am a passionate developer
+                className='text-slate-800 text-3xl whitespace-nowrap'>
+                    <MyComponent/>
                 </motion.p>
-                <div>
-                    <div></div>
-                    <div></div>
+                <div className="flex justify-center items-center" id="hero-btn">
+                    <a href="#about"><div className="w-[8rem] h-[3rem] p-[3px] m-[1.5rem] hover:shadow-lg bg-slate-500 rounded-lg cursor-pointer flex justify-center items-center"><span className="align-middle shadow-xl font-bold">Read More</span></div></a>
+                    <a href="#contact"><div className="w-[8rem] h-[3rem] p-[3px] m-[1.5rem] hover:shadow-lg hover:bg-slate-500 bg-slate-300 rounded-lg cursor-pointer flex justify-center items-center border-2 border-slate-200 text-slate-800 hover:text-black"><span className="align-middle shadow-xl font-bold">Contact Me</span></div></a>
                 </div>
             </div>
             <div className='flex items-center w-1/2 relative design'>
@@ -67,20 +69,12 @@ const Hero = () => {
                     x: { duration: 0.5 },
                     default: { ease: "linear" }
                 }}
-                className='w-72 h-84 bg-blue-700 rounded-lg relative z-10 '>
+                className='w-72 h-84 bg-blue-400 rounded-lg relative z-10 blue'>
                     <img src={blue} alt='pic'/>
                 </motion.div>                
-                <motion.div 
-                animate={{ x: 0 }} 
-                initial={{x: 500}}
-                transition={{
-                    delay: 1,
-                    x: { duration: 0.5 },
-                    default: { ease: "linear" }
-                }}
-                className='rounded-lg absolute left-32'>
+                <div className='rounded-lg absolute left-32 pink'>
                     <img src={pink} alt='pic' className='w-84 h-42'/>
-                </motion.div>                
+                </div>                
             </div>
         </div>
      );

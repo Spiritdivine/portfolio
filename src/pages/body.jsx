@@ -9,7 +9,7 @@ import About from "./About";
 
 const Body = () => {
     return ( 
-        <div className="w-[80%] ml-auto body">
+        <main className="body" id="body">
             <Hero/>
             <About/>
             <Experience/>
@@ -17,7 +17,7 @@ const Body = () => {
             <Skills/>
             <Education/>
             <Contact/>
-        </div>
+        </main>
      );
 }
  

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Ecommerce = () => {
     return ( 
-        <div className=" h-[26rem] rounded-lg shadow-lg bg-white max-w-sm flex justify-between items-center flex-col pb-6 subproj">
+        <div className=" h-[26rem] rounded-lg shadow-lg  max-w-sm flex justify-between items-center flex-col pb-6 subproj">
             <motion.div 
             animate={{ x: 0, y: 0 }} 
             initial={{x: -150, y: 150}}

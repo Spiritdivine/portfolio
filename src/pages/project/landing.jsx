@@ -2,7 +2,7 @@ import landpage from "../photos/landpage.png"
 
 const Landing = () => {
     return ( 
-        <div className=" h-[26rem] rounded-lg shadow-lg bg-white max-w-sm flex justify-between items-center flex-col pb-6 subproj">
+        <div className=" h-[26rem] rounded-lg shadow-lg  max-w-sm flex justify-between items-center flex-col pb-6 subproj">
             <div className="h-[12rem] w-96 imgpng">
                 <img className="rounded-t-lg w-full h-full object-fit" src={landpage} alt="landpage"/>
             </div>

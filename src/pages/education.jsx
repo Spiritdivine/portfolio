@@ -2,7 +2,7 @@ import graduate from "../pages/photos/graduate.png"
 
 const Education = () => {
     return ( 
-        <div id="education" className="h-screen flex justify-center align-center bg-slate-400 ">
+        <div id="education" className="h-screen flex justify-center align-center ">
             <div className="h-[100%] w-[50%] pl-[6rem] pt-[3em]">
                 <div className="h-[8rem] align-middle ">
                     <h1 className="text-[1.5em] text-start uppercase text-sky-600 font-bold hover:subpixel-antialiased">UNIVERSITY OF NIGERIA, NSUKKA</h1>
