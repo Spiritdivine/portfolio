@@ -10,7 +10,7 @@ const Hero = () => {
     
     return ( 
         <div className='flex space-x-32 justify-start items-center px-2  h-screen  hero' id="hero">
-            <div className='w-1/2' id="hero-box1">
+            <div className='w-[45%]' id="hero-box1">
                 <motion.p 
                 animate={{ x: 0 }} 
                 initial={{x: -500}}
@@ -55,14 +55,15 @@ const Hero = () => {
                 className='text-slate-800 text-3xl whitespace-nowrap'>
                     <MyComponent/>
                 </motion.p>
-                <div className="flex justify-center items-center" id="hero-btn">
-                    <a href="#about"><div className="w-[8rem] h-[3rem] p-[3px] m-[1.5rem] hover:shadow-lg bg-slate-500 rounded-lg cursor-pointer flex justify-center items-center"><span className="align-middle shadow-xl font-bold">Read More</span></div></a>
-                    <a href="#contact"><div className="w-[8rem] h-[3rem] p-[3px] m-[1.5rem] hover:shadow-lg hover:bg-slate-500 bg-slate-300 rounded-lg cursor-pointer flex justify-center items-center border-2 border-slate-200 text-slate-800 hover:text-black"><span className="align-middle shadow-xl font-bold">Contact Me</span></div></a>
+                <div className="flex justify-center items-center flex-wrap w-[50%]" id="hero-btn">
+                    <a className="px-[2em] m-[1.5rem] hover:shadow-lg bg-slate-500 rounded-lg cursor-pointer align-middle shadow-xl font-bold text-[1rem]">about you</a>
+                    <a href="#about"><div className="px-[2em] m-[1.5rem] hover:shadow-lg bg-slate-500 rounded-lg cursor-pointer align-middle shadow-xl font-bold text-[1rem]">Read More</div></a>
+                    <a href="#contact"><div className="px-[2em] m-[1.5rem] hover:shadow-lg hover:bg-slate-500 bg-slate-300 rounded-lg cursor-pointer border-2 border-slate-200 text-slate-800 hover:text-black align-middle shadow-xl font-bold text-[1rem]">Contact Me</div></a>
                 </div>
             </div>
-            <div className='flex items-center w-1/2 relative design'>
-                <motion.div 
-                animate={{ y: 0 }} 
+            <div className='flex items-center w-[45%] relative design ml-8' role="main">
+                <motion.div
+                animate={{ y: 0 }}
                 initial={{y: -1000}}
                 transition={{
                     delay: 1,
