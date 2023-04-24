@@ -11,7 +11,7 @@ function About() {
           <div >
             <div className='headisc mb-20'><h3 className='text-lg '>About</h3></div>
             <div className='shadow hover:shadow-2xl p-4 border rounded-lg'>
-              <p className='flex items-center  text-left font-medium  indent-8' id='desc'>
+              <p className='flex items-center  text-left font-medium  indent-8 text-[1rem]' id='desc'>
                 I have over 3 years of experience as a software engineer and have worked at both startups and large companies.
                 While i'm a proficient fullstack developer, my expertice is in building highly scalable backend services and also with much proficiency in the client-side i build using react as my major frontend technology.
               </p>
